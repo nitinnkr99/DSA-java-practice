@@ -2,7 +2,7 @@ public class LOOPS {
     public static void main(String[] args) {
         /*
         LOOPS :
-        basic Syntax of for loop in java is cpp.
+        basic Syntax of for loop in java is same as cpp.
 
         for (initialization ; condition ; increment / decrement ){
             body of loop;
