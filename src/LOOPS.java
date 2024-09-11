@@ -19,7 +19,7 @@ public class LOOPS {
         }
         System.out.println("\n");
 
-        System.out.println("below is the output of while loop");
+        System.out.println("below is the output of while loop :");
 
         /*
         while loop is used when we don't exactly know how many iterations need to be done
@@ -38,6 +38,29 @@ public class LOOPS {
             System.out.println(n);
             n++;
         }
+
+        System.out.println("\n");
+        System.out.println("below is the output of do-while loop :");
+
+        /*
+        there's one more kind of loop similar to while loop with a a small difference
+        the do-while loop executes once doesn't matter if the condition specified is False or not
+        other things are same as while loop.
+        Syntax of do-while loop :
+            do {
+            body ;
+            increment/decrement;
+              }while(condition)
+         */
+
+        int x = 1;
+        do {
+            System.out.println("hello , world!");
+        }while( x!=1);
+
+        /* a program can be written in any of the loop  as they can be converted into each other*/
+
+
 
     }
 }
