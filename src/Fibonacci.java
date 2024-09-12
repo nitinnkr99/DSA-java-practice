@@ -9,7 +9,14 @@ public class Fibonacci {
         int p = 0;
         int q =1;
 
-        int count = 2;
+        while (n>=1){
+            int temp = q; // temp = 3
+            q = p + temp; // q = 2 + 3 = 5
+            p = temp; //p = 3
+            n--;
+        }
+        System.out.println(p);
+
 
 
     }
