@@ -25,4 +25,6 @@ public class PassByValue {
     //NOTE:
     //java only has pass by value feature and not pass by reference that cpp and c has
     //only the value of a reference variable is passed as argument in a function
+    //for primitives value of reference is passed only (it depends on java that both var will point towards same object or different
+    //for non-primitives copy of reference is passed so both points towards same object
 }
