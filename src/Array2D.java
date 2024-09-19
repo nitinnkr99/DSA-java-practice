@@ -29,10 +29,15 @@ public class Array2D {
         //how to take input for a 3*3 matrix :
         int[][] thisinput = new int[3][3];
         Scanner in = new Scanner(System.in);
-        for(int r = 0 ; r < 3; r++){
-            for(int c = 0 ; c < 3 ; c++){
+        for(int r = 0 ; r < 3; r++) {
+            for (int c = 0; c < 3; c++) {
                 thisinput[r][c] = in.nextInt();
             }
         }
+        //printing the inputted array :
+        for(int i = 0; i< thisinput.length; i++){
+            System.out.println(Arrays.toString(thisinput[i]));
+        }
+
     }
 }
