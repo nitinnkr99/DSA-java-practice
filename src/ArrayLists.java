@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Scanner ;
 public class ArrayLists {
     public static void main(String[] args) {
         //what is need for ArrayLists ??
@@ -29,7 +29,29 @@ public class ArrayLists {
         my_list.remove(1); //index value is provided in the remove function as an argument
         System.out.println(my_list); //checking is element at index 1 ie 55 is removed or not;
 
-        //
+        //we can also replace any element by providing index and value
+        my_list.set(0 , 99);
+        System.out.println(my_list);
+
+
+
+        Scanner in = new Scanner(System.in);
+
+        //=======INPUT========
+
+        ArrayList<Integer> this_list = new ArrayList<>(10);
+
+
+        for(int i = 0 ; i < 10 ; i++){
+            this_list.add(in.nextInt());//using add function to input the values from user and add them to this_list
+        }
+
+
+
+        //============PRINT==============
+        for(int i = 0 ; i < 10 ; i++){
+            this_list.get(i); //to print the inputed list
+        }
 
     }
 }
