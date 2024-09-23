@@ -14,7 +14,7 @@ public class StringSearchLinear {
     }
 
     static boolean stringSearch(String my_str , char key ){
-        if (my_str.length() == 0){
+        if (my_str.isEmpty()){ //replaced my_str.length() with isEmpty()
             return false;
         }
         for(int i = 0; i < my_str.length() ; i++){
@@ -32,7 +32,7 @@ public class StringSearchLinear {
 
     //ENHANCED stringSearch() function
     static boolean newStringSearch(String my_str , char key){
-        if (my_str.length() == 0){
+        if (my_str.isEmpty()){
             return false;
         }
         for(char ch : my_str.toCharArray()){
