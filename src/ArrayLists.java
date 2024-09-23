@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner ;
+import java.lang.reflect.Array ;
 public class ArrayLists {
     public static void main(String[] args) {
         //what is need for ArrayLists ??
@@ -49,9 +50,11 @@ public class ArrayLists {
 
 
         //============PRINT==============
-        for(int i = 0 ; i < 10 ; i++){
-            this_list.get(i); //to print the inputed list
-        }
+
+
+       System.out.print(this_list);
+
+
 
     }
 }
