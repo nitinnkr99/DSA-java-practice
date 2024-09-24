@@ -30,8 +30,13 @@ public class MeasurementCalculator {
             case "rectangle":
             case "Rectangle":
                 rectangle();
+            case "square":
+            case "Square":
+                square();
         }
     }
+
+
 
 
     static void rectangle(){
@@ -48,6 +53,24 @@ public class MeasurementCalculator {
         }
         else if (choice.equals("Area") || choice.equals("area")){
             int a = l * b;
+            System.out.println("Area : " + a);
+        }
+        else {
+            System.out.println("INVALID OPERATION");
+        }
+    }
+
+    static void square() {
+        System.out.print("enter Side length : ");
+        int l = in.nextInt();
+        System.out.println("Perimeter or Area");
+        String choice = in.next();
+        if (choice.equals("perimter") || choice.equals("Perimeter")){
+            int p = 4 * l;
+            System.out.println("perimeter : " +  p);
+        }
+        else if (choice.equals("Area") || choice.equals("area")){
+            int a = l * l;
             System.out.println("Area : " + a);
         }
         else {
