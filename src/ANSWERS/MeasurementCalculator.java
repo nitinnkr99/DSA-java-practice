@@ -77,4 +77,22 @@ public class MeasurementCalculator {
             System.out.println("INVALID OPERATION");
         }
     }
+
+    static void circle(){
+        System.out.print("Enter radius : ");
+        int l = in.nextInt();
+        System.out.println("Circumference or Area");
+        String choice = in.next();
+        if (choice.equals("circumference") || choice.equals("Perimeter")){
+            int p = 4 * l;
+            System.out.println("perimeter : " +  p);
+        }
+        else if (choice.equals("Area") || choice.equals("area")){
+            int a = l * l;
+            System.out.println("Area : " + a);
+        }
+        else {
+            System.out.println("INVALID OPERATION");
+        }
+    }
 }
