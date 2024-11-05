@@ -33,6 +33,9 @@ public class MeasurementCalculator {
             case "square":
             case "Square":
                 square();
+            case "Circle":
+            case "circle":
+                circle();
         }
     }
 
@@ -65,7 +68,7 @@ public class MeasurementCalculator {
         int l = in.nextInt();
         System.out.println("Perimeter or Area");
         String choice = in.next();
-        if (choice.equals("perimter") || choice.equals("Perimeter")){
+        if (choice.equals("perimeter") || choice.equals("Perimeter")){
             int p = 4 * l;
             System.out.println("perimeter : " +  p);
         }
@@ -93,6 +96,32 @@ public class MeasurementCalculator {
         }
         else {
             System.out.println("INVALID OPERATION");
+        }
+    }
+
+    static void triangle(){
+        System.out.print("Isosceles or Equilateral");
+        String ch = in.next();
+        if (ch.equals("Isosceles") ){
+            System.out.print("Enter height");
+            int height = in.nextInt();
+            System.out.print("\n");
+            System.out.print("Enter base");
+            int base = in.nextInt();
+            System.out.print("Area or Perimeter");
+            String choice = in.next();
+            if (choice.equals("Area")){
+                int area = ((1/2) * height * base);
+                System.out.println(area);
+            }
+            if (choice.equals("perimeter")){
+                int perimeter = 2 * ( height + base );
+                System.out.print(perimeter);
+            }
+
+        }
+        if (ch.equals("Equilateral")){
+
         }
     }
 }
