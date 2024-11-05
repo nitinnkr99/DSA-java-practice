@@ -13,29 +13,20 @@ public class Max_Min {
 
         switch ( ch ){
             case "max":
-                maximum(a,b,c);
+                System.out.println(maximum(a,b,c));
             case "min":
-                minimum(a,b,c);
+                System.out.println(minimum(a,b,c));
         }
 
     }
 
     static int maximum( int a , int b , int c){
         if(a>b){
-            if(a>c){
-                return a;
-            }
-            else {
-                return c;
-            }
+            if (a>c) return a;
+            else return c;
         }
         else {
-            if (b > c) {
-                return b;
-            }
-            else {
-                return c;
-            }
+            return Math.max(b, c);
         }
     }
 
