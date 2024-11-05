@@ -15,7 +15,7 @@ public class Max_Min {
             case "max":
                 maximum(a,b,c);
             case "min":
-                minimum();
+                minimum(a,b,c);
         }
 
     }
@@ -25,13 +25,28 @@ public class Max_Min {
             if(a>c){
                 return a;
             }
-            else return c;
+            else {
+                return c;
+            }
+        }
+        else {
+            if (b > c) {
+                return b;
+            }
+            else {
+                return c;
+            }
+        }
+    }
+
+    static int minimum(int a , int b , int c){
+        if ( a < b && a < c){
+            return a;
         }
         else
-            if (b>c){
+            if(b < c ){
             return b;
         }
             else return c;
-
     }
 }
