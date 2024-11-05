@@ -121,7 +121,18 @@ public class MeasurementCalculator {
 
         }
         if (ch.equals("Equilateral")){
-
+            System.out.print("Enter side");
+            int side = in.nextInt();
+            System.out.print("Area or perimeter");
+            String choice = in.next();
+            if ( choice.equals("Area")){
+                double ar = 0.433012702 * side * side;
+                System.out.print(ar);
+            }
+            if (choice.equals("Perimeter")){
+                double per = 3 * side;
+                System.out.print(per);
+            }
         }
     }
 }
