@@ -4,24 +4,17 @@ public class MeasurementCalculator {
     static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         /*
-1. Area Of Circle Java Program
-2. Area Of Triangle
-3. Area Of Rectangle Program
-4. Area Of Isosceles Triangle
-5. Area Of Parallelogram
-6. Area Of Rhombus
-7. Area Of Equilateral Triangle
-8. Perimeter Of Circle
-9. Perimeter Of Equilateral Triangle
-10. Perimeter Of Parallelogram
-11. Perimeter Of Rectangle
-12. Perimeter Of Square
-13. Perimeter Of Rhombus
-14. Volume Of Cone Java Program
-15. Volume Of Prism
-16. Volume Of Cylinder
-17. Volume Of Sphere
-18. Volume Of Pyramid
+ Area Of Circle Java Program
+ Area Of Triangle
+ Area Of Rectangle Program
+ Area Of Isosceles Triangle
+ Area Of Equilateral Triangle
+ Perimeter Of Circle
+ Perimeter Of Equilateral Triangle
+ Perimeter Of Rectangle
+ Perimeter Of Square
+
+
          */
         System.out.print("Shape: ");
 
@@ -36,6 +29,9 @@ public class MeasurementCalculator {
             case "Circle":
             case "circle":
                 circle();
+            case "Triangle":
+            case "triangle":
+                triangle();
         }
     }
 
@@ -100,18 +96,18 @@ public class MeasurementCalculator {
     }
 
     static void triangle(){
-        System.out.print("Isosceles or Equilateral");
+        System.out.print("Isosceles or Equilateral     ");
         String ch = in.next();
         if (ch.equals("Isosceles") ){
-            System.out.print("Enter height");
+            System.out.print("Enter height: ");
             int height = in.nextInt();
             System.out.print("\n");
-            System.out.print("Enter base");
+            System.out.print("Enter base: ");
             int base = in.nextInt();
-            System.out.print("Area or Perimeter");
+            System.out.print("Area or Perimeter       ");
             String choice = in.next();
             if (choice.equals("Area")){
-                int area = ((1/2) * height * base);
+                double area = (0.5 * height * base);
                 System.out.println(area);
             }
             if (choice.equals("perimeter")){
