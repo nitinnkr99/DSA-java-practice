@@ -7,7 +7,8 @@ public class Array {
         //separately and initialize them , it will be better to use a array of 50 integer variables.
         //SYNTAX:
         /*
-        STEP: 1 Declaration : //at this moment the arr named reference variable pointing towards an array of integers is defined in stack memory
+        STEP: 1 Declaration : //at this moment the arr named reference variable pointing towards an array of integers
+         is defined in stack memory
             int[] arr ;
                     OR
             int arr[] ;
@@ -16,7 +17,7 @@ public class Array {
                     OR
              int arr[] = new int[5];
 
-       //this is also possible : int[] arr = {1,2,3,4,5} //here java figures out by itself how much size is allocated
+       //this is also possible : int[] arr = {1,2,3,4,5} //here java figures out by itself how much size is to be allocated
        //these values(objects) are stored in heap and things stored in heap are not continuous
 
          */

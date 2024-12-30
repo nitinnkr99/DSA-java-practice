@@ -12,5 +12,8 @@ public class BinarySearch {
               best case = O(1)
               worst case = O(log n)
          */
+
+
+
     }
 }
