@@ -13,7 +13,31 @@ public class BinarySearch {
               worst case = O(log n)
          */
 
+        int[] ar = {12,14,16,18,20,22,24,26};
+        int target = 16;
+        int ans = Binarysearch(ar , target);
+        //print the index of target element.
+        System.out.println(ans);
 
+    }
+    static int Binarysearch(int[] arr , int target) {
+        int start = 0;
+        int end = ((arr.length)-1);
+
+        while (start<=end){
+            //find the middle element !!
+            int mid = (start + (end-start)) / 2;
+
+            if (target > arr[mid]) {
+                end = mid - 1;
+            }else if (target < arr[mid]){
+                start = mid + 1;
+            }
+            else {
+                return mid; //element or target found , return the index of targett.
+            }
+        }
+        return -1; //if target not found in the array then this will return -1 as index
 
     }
 }
