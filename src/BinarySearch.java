@@ -14,7 +14,7 @@ public class BinarySearch {
          */
 
         int[] ar = {12,14,16,18,20,22,24,26};
-        int target = 16;
+        int target = 26;
         int ans = Binarysearch(ar , target);
         //print the index of target element.
         System.out.println(ans);
@@ -24,13 +24,13 @@ public class BinarySearch {
         int start = 0;
         int end = ((arr.length)-1);
 
-        while (start<=end){
+        while (start <= end){
             //find the middle element !!
-            int mid = (start + (end-start)) / 2;
+            int mid = start + ((end-start)/2);
 
-            if (target > arr[mid]) {
+            if (target < arr[mid]) {
                 end = mid - 1;
-            }else if (target < arr[mid]){
+            }else if (target > arr[mid]){
                 start = mid + 1;
             }
             else {
